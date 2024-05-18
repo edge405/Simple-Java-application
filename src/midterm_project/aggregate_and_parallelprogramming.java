@@ -244,7 +244,7 @@ public class aggregate_and_parallelprogramming extends javax.swing.JFrame {
     public void createConnection(){
         String url = "jdbc:mysql://localhost:3306/dbentries";
         String username = "root";
-        String password = "Leo11784692842@";
+        String password = "YourPassword";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
