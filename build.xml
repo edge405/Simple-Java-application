@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <!--
 
     Licensed to the Apache Software Foundation (ASF) under one
@@ -30,6 +31,24 @@
     There exist several targets which are by default empty and which can be
     used for execution of your tasks. These targets are usually executed
     before and after some main targets. They are:
+=======
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="ICT-119-first" default="default" basedir=".">
+    <description>Builds, tests, and runs the project ICT-119-first.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+>>>>>>> origin/main
 
       -pre-init:                 called before initialization of project properties
       -post-init:                called after initialization of project properties
@@ -66,15 +85,23 @@
       -init-macrodef-junit:     defines macro for junit execution
       -init-macrodef-debug:     defines macro for class debugging
       -init-macrodef-java:      defines macro for class execution
+<<<<<<< HEAD
       -do-jar-with-manifest:    JAR building (if you are using a manifest)
       -do-jar-without-manifest: JAR building (if you are not using a manifest)
+=======
+      -do-jar:                  JAR building
+>>>>>>> origin/main
       run:                      execution of project 
       -javadoc-build:           Javadoc generation
       test-report:              JUnit report generation
 
     An example of overriding the target for project execution could look like this:
 
+<<<<<<< HEAD
         <target name="run" depends="GUIFormExamples-impl.jar">
+=======
+        <target name="run" depends="ICT-119-first-impl.jar">
+>>>>>>> origin/main
             <exec dir="bin" executable="launcher.exe">
                 <arg file="${dist.jar}"/>
             </exec>
